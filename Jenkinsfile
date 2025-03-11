@@ -80,7 +80,7 @@ pipeline {
             steps {
                 script {
                     dir('book-trip') {
-                        sh 'Auto'
+                        sh 'echo Auto'
                         sh 'terraform apply --auto approve'
                     }
                 }
