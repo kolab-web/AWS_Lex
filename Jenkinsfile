@@ -80,7 +80,7 @@ pipeline {
             steps {
                 script {
                     dir('book-trip') {
-                        sh 'terraform destroy --auto-approve'
+                        sh 'terraform {action} --auto-approve'
                     }
                 }
             }
